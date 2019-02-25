@@ -9,11 +9,12 @@
   </head>
   <body>
     <div id="container">
-      <div v-bind:class="{ comic: comicMode }">
-        <h1>{{ name }}</h1>
-        <div v-for="p in products">{{ p }}</div>
-        <button @click="changeComicMode">Toggle comic mode</button>
-      </div>
+      <h1>{{ name }}</h1>
+      <taco-card emoji="🌮"></taco-card>
+      <taco-card emoji="🍭"></taco-card>
+      <taco-card emoji="🎈"></taco-card>
+      <taco-card emoji="👫"></taco-card>
+      <taco-card emoji="🐙"></taco-card>
     </div>
 
     <script src="app.js"></script>

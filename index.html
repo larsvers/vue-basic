@@ -9,8 +9,11 @@
   </head>
   <body>
     <div id="container">
-      <h1 v-show="showName">{{ name }}</h1>
-      <div v-for="p in products">{{ p }}</div>
+      <div :class="{ comic: comicMode }">
+        <h1>{{ name }}</h1>
+        <div v-for="p in products">{{ p }}</div>
+        <button @click="changeComicMode">Toggle comic mode</button>
+      </div>
     </div>
 
     <script src="app.js"></script>

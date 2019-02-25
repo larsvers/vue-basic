@@ -9,7 +9,8 @@
   </head>
   <body>
     <div id="container">
-      <h1>{{ name }}</h1>
+      <h1 v-show="showName">{{ name }}</h1>
+      <div v-for="p in products">{{ p }}</div>
     </div>
 
     <script src="app.js"></script>

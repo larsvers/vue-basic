@@ -1,6 +1,8 @@
 const app = new Vue({
   el: '#container',
   data: {
-    name: 'TacoBell',
+    name: 'Fruit inc.',
+    showName: true,
+    products: ['Apples', 'Bananas', 'Pears', 'Lemons'],
   },
 });

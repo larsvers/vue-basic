@@ -1,8 +1,14 @@
 const app = new Vue({
   el: '#container',
   data: {
-    name: 'Fruit inc.',
+    name: 'Taco Bell',
+    comicMode: false,
     showName: true,
-    products: ['Apples', 'Bananas', 'Pears', 'Lemons'],
+    products: ['Tacos', 'Burritos', 'Nachos', 'More tacos'],
+  },
+  methods: {
+    changeComicMode() {
+      this.comicMode = !this.comicMode;
+    },
   },
 });
